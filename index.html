@@ -60,7 +60,7 @@
     <script>
         function getVotersList() {
             const httpRequest = new XMLHttpRequest();
-            httpRequest.open('GET', 'https://mounika0101.s3.ap-south-1.amazonaws.com/data.json');
+            httpRequest.open('GET', 'https://voter-management.onrender.com/voters');
             httpRequest.send();
             httpRequest.onreadystatechange = function () {
                 if (httpRequest.readyState === 4) {
@@ -90,7 +90,7 @@
         }
         function deleteVoter(voterId) {
             const httpRequest = new XMLHttpRequest();
-            httpRequest.open('DELETE', 'https://mounika0101.s3.ap-south-1.amazonaws.com/data.json/' + voterId);
+            httpRequest.open('DELETE', 'https://voter-management.onrender.com/voters/' + voterId);
             httpRequest.send();
             httpRequest.onreadystatechange = function () {
                 if (httpRequest.readyState === 4) {
