@@ -121,7 +121,7 @@
 
             const httpRequest = new XMLHttpRequest();
 
-            httpRequest.open('POST', 'https://mounika0101.s3.ap-south-1.amazonaws.com/data.json');
+            httpRequest.open('POST', 'https://voter-management.onrender.com/voters');
 
             httpRequest.setRequestHeader('content-type', 'application/json');
 
@@ -129,7 +129,7 @@
 
             httpRequest.onreadystatechange = function () {
                 if (httpRequest.readyState === 4) {
-                    window.location.href = 'voter-list.html';
+                    window.location.href = 'index.html';
                 }
             }
         }
